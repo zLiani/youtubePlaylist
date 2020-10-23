@@ -1,5 +1,4 @@
 # Program that deletes videos in a music playlist on YouTube that are not songs.
-
 import os
 import google_auth_oauthlib.flow
 import googleapiclient.discovery
@@ -50,7 +49,6 @@ while nextPageToken:
 
 def search_for_keywords(tags, title, description):
     key_words = ['lyric', 'Lyric', 'song', 'music']
-    # tags = list   title = str description = str
 
     for word in key_words:
         try:
